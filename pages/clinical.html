@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <style>
+        /* Css properties */
+        body{
+            background-color: white;
+        }
+        .main{
+            height: 1000px;
+            width: 1440px;
+            background-color: white;
+        }
+        .top{
+            height: 50px;
+            width: 1440px;
+            background-color: white;
+         
+        }
+        .top1{
+            height: 50px;
+            width: 50%px;
+            background-color: black;
+            
+        }
+     
+        .a{
+            height: 100px;
+            width:1440px;
+            background-color: white;
+            padding-left: 30px;
+           
+        }
+        img{
+            height: 100px;
+            width:200px;
+            float:left;
+        }
+        .b{
+            height: 70px;
+            width: 1440px;
+            background-color: black;
+            
+        }
+        li{
+            float: left;
+            list-style-type: none;
+            padding: 10px;
+            padding-right: 80px;
+            margin:0 auto;
+            font-size: small;
+            margin-left: 30px;
+            font-weight: 900;
+        }
+       
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+          
+            color:rgb(252, 177, 3);
+        }
+        i{
+            padding-top:20px ;
+            padding-left:30px ;
+           
+          
+            
+        }
+        a:hover{
+            color:rgb(252, 177, 3);
+        }
+        /* .book1{
+            padding: 1px;
+           margin-top: 600px;
+        }
+        .btn{
+            
+            height: 100px;
+            width: 1440px;
+            background-color: red;
+        } */
+        .book{
+            height: 700px;
+            width: 1440px;
+            background-color: red;
+        }
+        .book1{
+            height: 150px;
+            width: 720px;
+            background-color: rgb(252, 177, 3);
+            float: left;
+            line-height:0%;
+        }
+        .book2{
+            height: 150px;
+            width: 720px;
+            background-color: rgb(252, 177, 3);
+            float: right;
+            padding-left: 300px;
+            padding-top: 60px;
+        }
+        p{
+            padding-left: 40px;
+            padding-top: 40px;
+            font-family: serif;
+            font-size: xx-large;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            background-color: green;
+            border: 2px dotted red;
+          
+        }
+        .form{
+            height: 500px;
+            width: 1440px;
+            background-color:pink ;
+        }
+        .left-tab-style {
+  padding: 120px 0;
+}
+.left-tab-style .tabs-left .nav-tabs {
+  float: left;
+  margin-right: 25px;
+  border: none;
+}
+.left-tab-style .tabs-left .nav-tabs li {
+  margin-bottom: 5px;
+  float: none;
+}
+.left-tab-style .tabs-left .nav-tabs li a {
+  background: #f5f5f5;
+  border: none;
+  font-size: 18px;
+  color: #222222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 15px 20px;
+  min-width: 330px;
+  margin: 0;
+  margin: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.left-tab-style .tabs-left .nav-tabs li a:hover {
+  background: #f69d34;
+  color: #ffffff;
+}
+.left-tab-style .tabs-left .nav-tabs li a:hover i {
+  color: #ffffff;
+}
+.left-tab-style .tabs-left .nav-tabs li a i {
+  color: #f69d34;
+  padding-right: 12px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.left-tab-style .tabs-left .nav-tabs li a i:before {
+  font-size: 36px;
+  line-height: 1;
+  margin-left: 0;
+}
+.left-tab-style .tabs-left .nav-tabs li.active a {
+  border: none;
+  background: #f69d34;
+  color: #ffffff;
+}
+.left-tab-style .tabs-left .nav-tabs li.active a i {
+  color: #ffffff;
+}
+.left-tab-style .tabs-left .tab-content {
+  display: table-cell;
+}
+.left-tab-style .tabs-left .tab-content h2 {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+.left-tab-style .tabs-left .tab-content h2:after {
+  position: absolute;
+  background: #f69d34;
+  content: "";
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: 4px;
+  width: 50px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+#navbar a.active:hover {
+  background-color: yellow;
+  color: black;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.middle{
+    height: 500px;
+    width: 1440px;
+    background-color: #f69d34;
+}
+.mid1{
+    height: 500px;
+    width: 720px;
+    background-color: #f69d34;
+    float:left;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.mid2{
+    height:500px;
+    width: 720px;
+    float: right;
+}
+.mid11{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.mid12{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.mid3{
+    height: 400px;
+    width: 1440px;
+    background-color: white;
+    padding-top: 50px;
+}
+.mid31{
+    height: 400px;
+    width: 720px;
+    float: left;
+    background-color: white;
+}
+.mid32{
+    height: 400px;
+    width: 720px;
+    float: right;
+}
+.mid321{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+.mid322{
+    font-size: 25px;
+    color: black;
+    padding-left: 30px;
+}
+.f1{
+    font-size: 25px;
+    padding-left: 150px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+  padding: 20px;
+  padding-left: 50px;
+}
+.flex-container >div>img {
+  background-color: white;
+  height: 200px;
+  width: 400px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.research{
+    height: 400px;
+    width: 1440px;
+    background-color: whitesmoke;
+   
+   
+}
+.r1{
+    height: 300px;
+    width:800px;
+    float: left;
+    background-color: whitesmoke;
+    
+}
+.r11{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+}
+.r12{
+    font-size: 15px;
+    float: left;
+    
+}
+.global{
+    height: 400px;
+    width: 1440px;
+    background-color: white;
+   
+
+}
+.g1{
+    height: 550px;
+    width:1440px;
+    float:left;
+    background-color: whitesmoke;
+  
+}
+.g11{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    
+
+}
+.g12{
+    font-size: 20px;
+    float: left;
+}
+.choosing{
+    height: 300px;
+    width:1440px;
+    background-color: white;
+  
+}
+.c1{
+    height: 200px;
+    width: 440px;
+    float: left;
+    background-color: white;
+}
+.c2{
+    height: 200px;
+    width: 1000px;
+    float: right;
+}
+.c21{
+    font-size: 30px;
+    font-weight: bold;
+}
+.c22{
+    font-size: 20px;
+
+}
+.last{
+    height: 450px;
+    width: 1440px;
+    background-color: rgba(3, 23, 34, 0.9);
+
+}
+.last1{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+.bottom{
+    height: 200px;
+    width: 1440px;
+    background-color:white ;
+}
+.b11{
+    height: 300px;
+    width: 1440px;
+    background-color: red;
+
+}
+.b12{
+    height: 300px;
+    width:480px;
+    background-color:#222222;
+    float: left;
+}
+.b13{
+    height: 300px;
+    width:480px;
+    background-color: #222222;
+    float: left;
+}
+.b14{
+    height: 300px;
+    width: 480px;
+    background-color: #222222;
+    float:right;
+}
+i:hover{
+    color: yellow;
+}
+.b131{
+    color:white
+}
+.b141{
+    color: white;
+}
+.b15{
+    height: 80px;
+    width: 1440px;
+    background-color: black;
+}
+.b151{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.cc1{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.cc2{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.text{
+    font-size: 80px;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+    top: 500px;
+    left:100px;
+  
+}
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header Part -->
+   
+    <div class="main">
+    <div class="top">
+        <div class="top1">
+            <i class="fa fa-phone" style="color: white"><b>+91 9818821038</b></i>
+            <i class="fa fa-map-marker" style="color: white"><b>Plot No:272, Sector 38 Gurgaon Haryana</b></i>
+            <i class="fa fa-envelope" style="color: white"><b>hr@ultratheruaptics.com</b></i> 
+            <a href="https://twitter.com"> <i class="fa fa-twitter"  style="color: white; float: right;padding-right: 20px;"></a></i> 
+            <a href="https://facebook.com"><i class="fa fa-facebook" style="color: white; float:right;padding-right:20px"></a></i>
+            <a href="https://linkedin.com"><i class="fa fa-linkedin" style="color: white; float:right;padding-right:20px"></a></i>
+            <a href="https://google.com"><i class="fa fa-google" style="color: white; float:right;padding-right:20px"></a></i>
+           
+
+        </div>
+       
+
+    </div>
+    <!-- Logo Area -->
+    <div class="a">
+        <img src="../images/logo1.png">
+        <i class="fa fa-phone" style="color:red;"></i><strong style=" font-size:larger;font-family: serif;">+91-9391934987</strong>
+        <i class="fa fa-map-marker" style="color:red"></i><strong style=" font-size:larger;font-family: serif;">Plot No:272, Sector 38 Gurgaon Haryana</strong>
+        <i class="fa fa-envelope" style="color:red"></i><strong style=" font-size:larger; font-family: serif;">hr@ultratheruaptics.com</strong>
+
+    </div>
+
+    <!-- Navbar Part -->
+    <div id="navbar">
+        <li><a class="active" href="../pages/home.html">HOME</a></li>
+        <li><a href="../pages/about.html">ABOUT US</a></li>
+        <li><a href="../pages/clinical.html">CLINICAL DIAGNOSTICS</a></li>
+        <li><a href="../pages/bioformatics.html">BIOINFORMATICS</a></li>
+        <li><a href="../pages/clinical-research.html">CLINCIAL RESEARCH</a></li>
+        <!-- <li><a href="../pages/book-test.html"><b style="color: yellow; font-size:large;margin-bottom:10px ; ">BOOK A TEST</b></a></li> -->
+    </div>
+
+    <!-- Middle Part -->
+
+    <div class="aa">
+        <img src="../images/molecular5-ImResizer.jpg" style="height: 600px;width:1440px">
+        <div class="text">Clinical Diagnostics</div>
+    </div>
+    <br>
+    <br>
+    <br>
+  <h1>Clinical Diagnostics</h1>
+  <div class="ccc">
+    <p class="cc1">Ultra Therapeutics offers clinical research and development services to pharmaceutical and biotechnology companies in the areas of clinical trial management, biomarker discovery, and validation. Led by a team of specialist oncopathologists, molecular biologists, and clinical researchers, we are well-positioned to leverage the wide variety of patient cases..</p><p class="cc2">
+
+        The molecular research department undertakes sponsored research projects for pharmaceutical and biotechnology companies relating to the discovery and validation of cancer biomarkers. We manage an annotated biorepository of clinical specimens, including cancer tumour tissue (and in most cases, paired normal tissue), blood and serum. In many cases, we also maintain clinical data for patients, all in full compliance with norms of good clinical practice and as per protocols approved by our central ethics committee. Our clinical research team works with physicians to determine the genetic profile of different types of cancer to formulate personalized therapeutic approaches, which enable the effective delivery of quality cancer care.</p>
+
+  </div>
+           
+            <footer>
+
+
+                <div class="b11">
+                    <div class="b12">
+                        <p style="font-size: 30px;font-weight:bold;color:white;padding-top: 30px;">Corporate Office</p>
+                        
+                        <i class="fa fa-map-marker" style="color:white">Zen Learning Academy Basement 1 Plot no 272, Sector 38 Gurgaon Haryana 122002</i>
+                        
+                        
+                        <i class="fa fa-phone">+91 9818821038</i>
+                    
+                        <a href="https://twitter.com"> <i class="fa fa-twitter"  style="color: white; float: left;padding-left: 20px;"></a></i> 
+                        <a href="https://facebook.com"><i class="fa fa-facebook" style="color: white; float:left;padding-left:20px"></a></i>
+                        <a href="https://linkedin.com"><i class="fa fa-linkedin" style="color: white; float:left;padding-left:20px"></a></i>
+                        <a href="https://google.com"><i class="fa fa-google" style="color: white; float:left;padding-left:20px"></a></i>
+                        <a href="https://youtube.com"><i class="fa fa-youtube" style="color: white; float:left;padding-left:20px"></a></i>
+                        <a href="https://skype.com"><i class="fa fa-skype" style="color: white; float:left;padding-left:20px"></a></i>
+
+
+
+                    </div>
+                    <div class="b13">
+                        <p class="b131">Useful Links</p>
+                        <li><a class="active" href="../pages/home.html">HOME</a></li>
+                        <li><a href="../pages/about.html">ABOUT US</a></li>
+                        <li><a href="../pages/clinical.html">CLINICAL DIAGNOSTICS</a></li>
+                        <li><a href="../pages/bioformatics.html">BIOINFORMATICS</a></li>
+                        <li><a href="../pages/clinical-research.html">CLINCIAL RESEARCH</a></li>
+
+
+
+                    </div>
+                    <div class="b14">
+                        <p class="b141">Ghaziabad Branch</p>
+                        <i class="fa fa-map-marker" style="color:white"> Jyoti Super Gardenia Ahinasa Khand 2 Indirapuram Ghaziabad 201010</i>
+
+
+                    </div>
+
+                </div>
+            </footer>
+            <div class="b15">
+                <p class="b151">© 2022 Delerweb All Rights Reserved. </p>
+
+            </div>
+            
+        
+    
+
+
+
+
+
+    
+</div>
+
+        
+       
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+<script>
+    function book(){
+       window.location.href="../pages/book-test.html"
+    }
+</script>
+        
+        
+        
+        
+
+   
+    
+</body>
+</html>
